@@ -24,6 +24,23 @@
   <body>
     
     <div style="height: 100vh; width: 100vw" id="root"></div>
+    <!-- loading message: shown while R starts in the browser, removed once the app appears -->
+    <div id="pd-loading" style="position:fixed; left:0; right:0; top:58%; text-align:center; pointer-events:none;
+         font-family:Calibri, Carlito, 'Segoe UI', system-ui, sans-serif; color:#1E3D2F; padding:0 16px;">
+      <div style="font-size:1.25rem; font-weight:600;">Loading the Biol 312 Parasitoid Dashboard</div>
+      <div style="font-size:1rem; color:#555; margin-top:6px;">R is starting inside your browser. The first visit can take up to three minutes;
+        later visits are faster.</div>
+    </div>
+    <script>
+      (function () {
+        var done = function () { var m = document.getElementById("pd-loading"); if (m) m.remove(); };
+        var root = document.getElementById("root");
+        var watch = setInterval(function () {
+          var f = root && root.querySelector("iframe");
+          try { if (f && f.contentDocument && f.contentDocument.querySelector("#gate, .navbar")) { clearInterval(watch); done(); } } catch (e) {}
+        }, 400);
+      })();
+    </script>
     
   </body>
 </html>
