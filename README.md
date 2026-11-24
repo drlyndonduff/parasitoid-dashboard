@@ -1,6 +1,6 @@
 # Biol 312 Parasitoid Dashboard (v2 Results)
 
-A results dashboard for the Biol 312 parasitoid contest labs with *Trissolcus japonicus*. Pairs of females, infected (WI) or uninfected (U) with a bacterial symbiont, compete for a host egg mass in three dyad types: U x U, U x WI and WI x WI. The dashboard shows contests, behaviour and behavioural sequences, female identity, competition within dyads, offspring sex ratio, and the behaviours added to the ethogram based on student observations, using mixed models with dyad as a random effect.
+A results dashboard for the Biol 312 parasitoid contest labs with *Trissolcus japonicus*. Pairs of females, infected (I) or uninfected (U) with a bacterial symbiont, compete for a host egg mass in three dyad types: U x U, U x I and I x I. The dashboard shows contests, behaviour and behavioural sequences, female identity, competition within dyads, offspring sex ratio, and the behaviours added to the ethogram based on student observations, using mixed models with dyad as a random effect.
 
 **Open the dashboard:** https://drlyndonduff.github.io/parasitoid-dashboard/
 
